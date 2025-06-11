@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong></strong>
+                        <p>
+                            
+                            Bilo du bist die Rose,<br> die in meinem Herzen blüht,<br>
+                            Lass es mit Liebe erfüllt sein,<br> Lass es von Liebe bedeckt sein.<br>
+                            Die Sonne geht jeden Tag mit dir auf,<br>
+                            Ihr einziges Lächeln ist drei Leben wert.<br>
+                            
+                            Auch wenn die Rosen in meinem Garten eine nach der anderen verblühen,<br>
+                            Mein Herz brennt immer<br> Direkt mit deiner Liebe.<br>
+                            Deine Liebe ist so tief, so wahr,<br>
+                            Bilo, die Welt ohne dich<br> Bleibt immer unvollständig.<br>
+                           <strong>Dein Verehrer 💕💋</strong> 
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
